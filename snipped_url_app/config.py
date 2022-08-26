@@ -8,7 +8,7 @@ class Settings(BaseSettings):
     db_url: str = "sqlite:///./snipped-url.db"
 
     class Config:
-        env_file = ".env"
+        env_file = "../.env"
 
 
 @lru_cache

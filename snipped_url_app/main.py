@@ -1,6 +1,6 @@
 import validators
 from fastapi import FastAPI, HTTPException
-from . import schemas
+from snipped_url.snipped_url_db import schemas
 
 app = FastAPI()
 
