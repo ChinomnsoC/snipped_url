@@ -1,3 +1,3 @@
 "use strict";
-console.log("ts");
+console.log('ts');
 //# sourceMappingURL=app.js.map
