@@ -23,3 +23,4 @@ Given a long URL link, it generates a shorter link that works.
 
 If your browser doesn't open automatically, point it to [http://127.0.0.1:8521/](http://127.0.0.1:8521/). When the visualization loads, press Reset, then Run.
 `pip install -r requirement.txt`
+`npm i --save-dev typescript jest browser-sync rimraf @types/jest npm-run-all`
