@@ -1,0 +1,25 @@
+{
+  "name": "snipped_url_frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "browsersync": "npx browser-sync start --server 'public' --port 5000 --files 'public'",
+    "watch": "npx tsc --project tsconfig.json --watch",
+    "dev": "run-p watch browsersync",
+    "compile": "npx tsc --project tsconfig.json",
+    "clean": "npx rimraf public/**/*",
+    "build": "run-s clean compile",
+    "test": "npx jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^29.0.0",
+    "browser-sync": "^2.27.10",
+    "jest": "^29.0.2",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.8.2"
+  }
+}
