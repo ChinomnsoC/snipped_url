@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "tsc": "tsc",
-    "browsersync": "npx browser-sync start --server 'public' --port 5000 --files 'public'",
+    "browsersync": "npx browser-sync start --server 'public' --port 5001 --files 'public'",
     "watch": "npx tsc --project tsconfig.dev.json --watch",
     "dev": "run-p watch browsersync",
     "compile": "npx tsc --project tsconfig.prod.json",

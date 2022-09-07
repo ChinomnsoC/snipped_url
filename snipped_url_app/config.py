@@ -11,7 +11,7 @@ class Settings(BaseSettings):
         env_file = "../.env"
 
 
-@lru_cache
+@lru_cache(maxsize=100)
 def get_settings() -> Settings:
     settings = Settings()
     print(f"Loading settings for: {settings.env_name}")
