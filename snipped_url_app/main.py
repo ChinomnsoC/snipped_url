@@ -5,10 +5,11 @@ from sqlalchemy.orm import Session
 
 from . import schemas, models
 
-from .connectdb import engine, SessionLocal
+from .connectdb import engine, SessionLocal, Base
 
 app = FastAPI()
-models.Base.metadata.create_all(bind=engine)
+
+Base.metadata.create_all(bind=engine)
 
 
 def raise_bad_request(message):
@@ -48,8 +49,3 @@ def shorten_url(url: schemas.URLBase, db: Session = Depends(get_db)):
         db_url.admin_url = secret_key
 
         return db_url
-
-#
-# @app.get("/items/{item_id}")
-# def read_item(item_id: int, q: Union[str, None] = None):
-#     return {"item_id": item_id, "q": q}
