@@ -4,7 +4,7 @@ from .connectdb import Base
 
 
 class URL(Base):
-    __tablename__ = "urls"
+    __tablename__ = "URLTable"
 
     id = Column(Integer, primary_key=True)
     key = Column(String, unique=True, index=True)
